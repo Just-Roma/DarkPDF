@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/toggle_button.css" />
+    <link rel="stylesheet" href="css/range_slider.css" />
+    <link rel="stylesheet" href="css/overlay_management.css" />
+    <script type="text/javascript" src="../../configurations.js" defer></script>
+    <script type="text/javascript" src="popup.js" defer></script>
+  </head>
+  <body>
+
+    <div id="toggle_container">
+      <input id="toggle" type="checkbox" >
+    </div>
+
+    <div id="sliders_container">
+      <div id="sliders">
+        <label for="header_color">Header's color:</label>
+        <input id="header_color" type="range" class="slider" min="0" max="255" step="1" />
+
+        <label for="header_contrast">Header's contrast:</label>
+        <input id="header_contrast" type="range" class="slider" min="50" max="100" step="1" />
+
+        <label for="pdf_color">PDF's color:</label>
+        <input id="pdf_color" type="range" class="slider" min="200" max="255" step="1" />
+
+        <label for="pdf_contrast">PDF's contrast:</label>
+        <input id="pdf_contrast" type="range" class="slider" min="50" max="100" step="1" />
+
+        <label for="side_color">Background's color:</label>
+        <input id="side_color" type="range" class="slider" min="0" max="255" step="1" />
+
+        <label for="side_contrast">Background's contrast:</label>
+        <input id="side_contrast" type="range" class="slider" min="50" max="100" step="1" />
+      </div>
+    </div>
+
+    <div id="boundary_management_container">
+      <div class="boundary_container">
+        <label for="top_boundary">Top boundary:</label>
+        <input id="top_boundary" class="boundary_input" type="text" autocomplete="off" />
+      </div>
+      <div class="boundary_container">
+        <label for="left_boundary">Left boundary:</label>
+        <input id="left_boundary" class="boundary_input" type="text" autocomplete="off" />
+      </div>
+      <div class="boundary_container">
+        <label for="right_boundary">Right boundary:</label>
+        <input id="right_boundary" class="boundary_input" type="text" autocomplete="off" />
+      </div>
+    </div>
+
+    <div id="tab_error" class="special_message">Error message will be placed here.</div>
+
+    <div id="message_for_non_pdf" class="special_message">Non-PDF file detected.<br>Extension is disabled.</div>
+
+  </body>
+</html>

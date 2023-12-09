@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+  --background_color: #373737;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--background_color);
+  font-family: Roboto, Arial, Helvetica, serif;
+}
+
+.special_message {
+  position: relative;
+  padding: 10px 10px;
+  display: none;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
